@@ -1,0 +1,182 @@
+/* --------------------------------- Section default header --------------------- */
+.about-page-default-header {
+  padding-bottom: 0;
+
+  .row {
+    justify-content: center;
+  }
+}
+
+/* --------------------------------- Section About Intro --------------------- */
+.section-about-intro {
+  padding-top: 3em;
+  padding-bottom: 6em;
+
+  .row {
+    width: 68%;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+      line-height: 1.75;
+      font-size: 20px;
+    }
+  }
+}
+
+
+/* --------------------------------- Section Parallax --------------------- */
+.section-parallax {
+  padding-top: 0em;
+  padding-bottom: 0;
+
+  .black-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 18vh;
+    background-color: #202020;
+  }
+
+  .row {
+    overflow: hidden;
+
+
+    .flex-col {
+      width: calc(33.333% - 1.333em);
+
+      &:not(:last-child) {
+        margin-right: 2em;
+      }
+
+      .image-col {
+        float: left;
+        width: 100%;
+        margin-bottom: 2em;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &:nth-child(2) {
+        .image-col {
+          transform: translateY(-6em);
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------- Section The Team --------------------- */
+.section-the-team {
+  padding-top: 3em;
+  margin-bottom: 10em;
+  padding-bottom: 0;
+
+  .section-team-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fade {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 64%;
+
+    &-top {
+      top: 0;
+      background: linear-gradient(to bottom, #202020, #00000000);
+    }
+
+    &-bottom {
+      bottom: 0;
+      background: linear-gradient(to top, #202020, #00000000);
+    }
+  }
+
+
+  .row {
+    width: 74%;
+    margin: 0 auto;
+    z-index: 99;
+
+    &:nth-child(1) {
+      justify-content: center;
+      text-align: center;
+      width: 64%;
+
+      .subs {
+        color: red;
+      }
+
+      h2 {
+        font-size: 36px;
+        line-height: 1.5;
+      }
+    }
+
+    .flex-col {
+      width: 20%;
+      height: 35em;
+      cursor: pointer;
+
+
+      .team-member-card {
+        position: absolute;
+        background-color: #fff;
+        width: 24em;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        padding: 2.5em;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        will-change: opacity, top;
+        color: #202020;
+
+        &::before {
+          content: "";
+          position: absolute;
+          border: 1em solid transparent;
+          border-bottom-color: #fff;
+          top: -2em;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        h2 {
+          font-size: 30px;
+          margin-bottom: .5em;
+          font-weight: bold;
+        }
+
+        h4 {
+          font-size: 20px;
+          margin-bottom: .75em;
+          color: rgb(218, 39, 39);
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+
+      &:hover {
+        .team-member-card {
+          opacity: 1;
+          visibility: visible;
+          top: 45%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/plugins/uikit.style.css" />
+    <link rel="stylesheet" href="./assets/style/plugins/lenis.min.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Index || Home</title>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Main -->
+    <main
+      class="main"
+      id="about"
+      data-barba="container"
+      data-barba-namespace="about"
+    >
+      <!-- Loading Screen -->
+      <div class="loading-screen">
+        <div class="loading-screen-content">
+          <div class="loading-screen-logo">Meraz Studio</div>
+        </div>
+      </div>
+      <!-- Nav -->
+      <nav class="nav js-navbar">
+        <div class="row">
+          <div class="flex-col nav-left slow-load">
+            <a href="/" class="logo logo-animate">
+              <span>M</span>
+              <span>e</span>
+              <span>r</span>
+              <span>a</span>
+              <span>Z</span>
+            </a>
+          </div>
+          <ul class="flex-col nav-center nav-links slow-load">
+            <li>
+              <a href="/work.html"
+                >Work
+                <span class="sup">10</span>
+              </a>
+            </li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <div class="flex-col nav-right slow-load">
+            <a href="" class="btn loop">
+              <div class="btn-wrap">
+                <div class="btn-text">Work with us</div>
+                <div class="btn-text red-dot">•</div>
+                <div class="btn-text">Work with us</div>
+                <div class="btn-text red-dot">•</div>
+                <div class="btn-text">Work with us</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="mobile-nav-wrap">
+          <ul class="mobile-nav slow-load">
+            <li>
+              <a href="./work.html">Work <span>10</span></a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="small-nav-button slow-load">
+          <div class="hamburger" role="button">
+            <div class="hamburger-icon"></div>
+          </div>
+        </div>
+      </nav>
+      <!-- Main Fade -->
+      <div class="main-fade">
+        <!-- Default Header -->
+        <header class="section default-header about-page-default-header">
+          <div class="container">
+            <div class="row"><h1 class="tricks">Mevlan</h1></div>
+          </div>
+        </header>
+        <!-- Section About Intro -->
+        <section class="section section-about-intro">
+          <div class="container">
+            <div class="row animate-fade-in">
+              <p>
+                With over a decade of collective experience, the Emble team
+                creates films that inspire connection and anticipation for
+                clients looking to build stronger bonds of communication with
+                their audience. Our commercial and brand discovery videos convey
+                exciting and persuasive messages that lodge themselves in the
+                viewer’s memory, remaining long after the film ends.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section Parallax -->
+        <section class="section section-parallax animate-fade-in">
+          <div class="container">
+            <div class="row">
+              <div class="flex-col" uk-parallax="y: 0, -15vh; easing: 0;">
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-1.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-2.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-3.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+              </div>
+              <div class="flex-col" uk-parallax="y: 0, 15vh; easing: 0;">
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-4.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-5.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-6.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+              </div>
+              <div class="flex-col" uk-parallax="y: 0, -15vh; easing: 0;">
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-7.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-8.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+                <div class="image-col">
+                  <img
+                    src="./assets/images/project-slider/image-9.jpg"
+                    alt="Project slider image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="black-bar"></div>
+        </section>
+        <!-- Section The team -->
+        <section class="section section-the-team">
+          <div
+            class="section-team-bg"
+            style="
+              background: url(https://emble.studio/media/pages/about/50006c1ef9-1683545526/emble-team.jpg)
+                no-repeat center bottom/cover;
+            "
+          ></div>
+          <div class="overlay">
+            <div class="fade fade-top"></div>
+            <div class="fade fade-bottom"></div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <h4
+                class="subs"
+                uk-scrollspy="cls: animate; repeat: true; offset-top: 0;"
+              >
+                The Team
+              </h4>
+              <h2>
+                The team Films that make you feel. Stories you want to be a part
+                of. Brand discovery that sticks.
+              </h2>
+            </div>
+            <div class="row">
+              <div class="flex-col team-member">
+                <div class="team-member-card">
+                  <h2>Ryan Kermond</h2>
+                  <h4 class="title">Cowboy Editor | Post-Production Pioneer</h4>
+                  <p>
+                    Ryan, part-time editor, full-time cowboy. Ryan spends his
+                    days lassoing the fast cuts and intricate animations of
+                    emble's post-production needs. He's great on horseback, and
+                    even greater in After Effects and Davinci Resolve. Don't be
+                    fooled, this man is from the ranch of timelines and long
+                    sequences. With experience in Commercials, TV Series,
+                    Documentaries and Online Content, he has worked with the
+                    likes of Tourism Australia, AirBnb, Microsoft, MTV,
+                    Nickelodeon, ABC, Channel 10 and many more.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-col team-member">
+                <div class="team-member-card">
+                  <h2>Andy Hardy</h2>
+                  <h4 class="title">DOP | Dream Architect</h4>
+                  <p>
+                    Here’s Andy. With 3 years experience shooting Sony Kando in
+                    the US, 5 years teaching video courses at YeahFieldTrip and
+                    6 years international travel for wedding and documentary
+                    work, Andy can discuss shoot-for-the-moon pitches and then
+                    explain the practicalities required to bring a project to
+                    life. Problem solver. Idea generator. One-handed handstand
+                    attempter.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-col team-member">
+                <div class="team-member-card">
+                  <h2>Jacinta Rooney</h2>
+                  <h4 class="title">
+                    Executive Producer | Communications Conductor
+                  </h4>
+                  <p>
+                    Meet the backbone of Emble. Packing a premium set of
+                    organisational and production skills acquired during her
+                    executive positions with a number of Australia's
+                    ultra-high-net-worth individuals, Jacinta’s the person who
+                    makes everything happen. She communicates with our clients
+                    throughout the whole project, acting as the glue that brings
+                    the concept from idea to screen. Making the hard stuff look
+                    easy.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-col team-member">
+                <div class="team-member-card">
+                  <h2>Jarryd Sinclair</h2>
+                  <h4 class="title">
+                    Director & Cinematographer | Visionary-In-Chief
+                  </h4>
+                  <p>
+                    Everything that happens in front of our lens is brought to
+                    you by Jarryd’s imagination. His use of visual analogies and
+                    cinematic metaphors creates impactful videos that aim to
+                    inspire, connect and above all else tell your story. His
+                    passion for filmmaking and photography stems from years of
+                    global travel and is heavily influenced by a love of action
+                    sports and adventure. After working with such world-leading
+                    brands as Specialized Bikes, Scott Sports and BMW, Jarryd
+                    became Emble’s scene-crafting maestro.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-col team-member">
+                <div class="team-member-card">
+                  <h2>El O'Calaghan</h2>
+                  <h4 class="title">Assistant Producer | Task Master</h4>
+                  <p>
+                    The small stuff makes the big stuff possible. El embodies
+                    this sentiment to the letter, applying her sponge-like
+                    ability to soak up new information to completing every task
+                    (little or large) carefully and efficiently. She honed her
+                    interpersonal skills as a high-performance snowboard
+                    instructor and throws herself into projects with the same
+                    passion, vigour and commitment. Emble’s organisational
+                    superhero allows the rest of the team to focus on their
+                    roles, knowing that whatever happens - El’s got it covered.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section Prefooter -->
+        <section class="section section-prefooter">
+          <div class="prefooter-block">
+            <div class="single-video-bg">
+              <video
+                src="https://emble.studio/media/site/bfcc121697-1683545528/footer-video-emble-website.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                uk-cover
+                class="uk-cover"
+              ></video>
+            </div>
+            <div class="btn-wrapper">
+              <a href="./contact.html" class="btn white">Work With us</a>
+            </div>
+          </div>
+        </section>
+        <!-- Footer -->
+        <footer class="section section-footer">
+          <div class="container">
+            <div class="row footer-top">
+              <div class="flex-col">
+                <div
+                  class="footer-image"
+                  style="
+                    background: url(./assets/images/image-1.jpg) no-repeat
+                      center center/cover;
+                  "
+                >
+                  <div class="logo-wrap">
+                    <a href="/" class="logo logo-animate">
+                      <span>M</span>
+                      <span>e</span>
+                      <span>r</span>
+                      <span>a</span>
+                      <span>Z</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-col">
+                <h2>Contact us</h2>
+                <div class="footer-links">
+                  <ul>
+                    <h4>Sitemap</h4>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./work.html">Work</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+                  <ul>
+                    <h4>Socials</h4>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://instagram.com/mevlankurtishi87"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li><a href="#">Vimedo</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                  </ul>
+                  <ul>
+                    <h4>Contact</h4>
+                    <li>
+                      <a href="mailto:devmeraz87@gmail.com">@devmeraz87</a>
+                    </li>
+                    <li><a href="tel:01846144465">01846144465</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row footer-bottom">
+              <div class="flex-col">
+                <div class="codeby">
+                  <a
+                    target="_blank"
+                    href="https://instagram.com/mevlankurtishi87"
+                  >
+                    <div class="icon">
+                      <img src="./assets/images/rose/rose svg.svg" alt="" />
+                    </div>
+                    Code by Mevlan
+                  </a>
+                </div>
+              </div>
+              <div class="flex-col">
+                <p>&copy; 2025 Meraz studio</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <div class="animate-fade-in" style="display: none"></div>
+
+    <!-- Plugins -->
+    <script src="./assets/js/plugins/jquery.3.7.1.min.js"></script>
+    <script src="./assets/js/plugins/barba.core.2.10.3.umd.js"></script>
+    <script src="./assets/js/plugins/gsap.3.12.7.min.js"></script>
+    <script src="./assets/js/plugins/uikit.3.23.0.min.js"></script>
+    <script src="./assets/js/plugins/images.loaded.min.js"></script>
+    <script src="./assets/js/plugins/fontfaceobserver.standalone.min.js"></script>
+    <script src="./assets/js/plugins/lenis.min.js"></script>
+
+    <!-- Core -->
+    <script src="./assets/js/custom/loading.js"></script>
+    <script src="./assets/js/custom/scrollSmoother.js"></script>
+    <script src="./assets/js/custom/transition.v0.1.0.js"></script>
+    <script src="./assets/js/custom/nav-up-down.js"></script>
+    <script src="./assets/js/custom/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+.nav {
+  position: fixed;
+  top: 2.5em;
+  left: 0;
+  width: 100%;
+  padding: 0 3em;
+  z-index: 9999;
+  transition: 0.4s;
+  will-change: top, opacity;
+
+  .mobile-nav-wrap {
+    display: none;
+  }
+
+  &.scroll-up {
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-col {
+    width: auto;
+  }
+
+  .nav-left {
+    width: 10.8em;
+  }
+
+  .nav-right {
+    .btn {
+      max-width: 12em;
+      white-space: nowrap;
+
+      .btn-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &.loop {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        overflow: hidden;
+        font-size: 0.9em;
+        padding-left: 0;
+        padding-right: 0;
+
+        .btn-wrap {
+          animation: btnloop 4s linear infinite;
+          transform: translateX(-94%);
+
+          @keyframes btnloop {
+            0% {
+              transform: translateX(0%);
+            }
+
+            100% {
+              transform: translateX(-94%);
+            }
+          }
+
+          .btn-text {
+            &.red-dot {
+              padding: 0 1em;
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-links {
+
+    li {
+      float: left;
+
+      a {
+        position: relative;
+        padding: 1em;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        .sup {
+          position: absolute;
+          top: 1.4em;
+          right: 0.8em;
+          font-size: 12px;
+          transform: translate(50%, -50%);
+          opacity: 0.6;
+          line-height: 1;
+          color: #fff;
+        }
+
+        &:hover {
+          color: red;
+
+          .sup {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+  &.light {
+    color: #202020;
+
+    a {
+      .sup {
+        color: #333;
+      }
+    }
+
+    .nav-right {
+
+      .btn {
+        color: #202020;
+        border-top-color: #20202031;
+        border-bottom-color: #20202031;
+
+        &:hover {
+          border-color: red;
+        }
+      }
+    }
+
+  }
+
+}
+
+.small-nav-button {
+  position: absolute;
+  right: 3em;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+  transition: 0.3s;
+  height: 50px;
+  width: 50px;
+  transition: 0.3s;
+  opacity: 0;
+
+
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    background-color: #212b4d;
+    border-radius: 50%;
+    transform: scale(0.5);
+    transition: 0.3s;
+    cursor: pointer;
+
+    display: grid;
+    place-items: center;
+
+    &-icon {
+      position: relative;
+      width: 20px;
+      height: 5px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        top: -2px;
+      }
+
+      &::after {
+        top: auto;
+        bottom: -2px;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    visibility: visible;
+    opacity: 1;
+
+    .hamburger {
+      transform: scale(1);
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav-left {
+    padding: 0.65em 0;
+  }
+
+
+  .nav-center,
+  .nav-right {
+    display: none;
+  }
+
+  .mobile-nav-wrap {
+    display: block !important;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
+    will-change: height;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    height: 100% !important;
+
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+    li {
+      overflow: hidden;
+      display: inline-block;
+
+      a {
+        padding: 0.5em;
+        font-size: 40px;
+        font-weight: 700;
+        position: relative;
+        transform: translateY(100%);
+        color: #202020;
+
+        span {
+          position: absolute;
+          display: inline-block;
+          font-size: 12px;
+          top: 10px;
+          right: 5px;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .nav {
+    &.mobile-active {
+
+      .mobile-nav-wrap {
+        height: 100%;
+        overflow: visible;
+        visibility: visible !important;
+      }
+
+      .mobile-nav {
+
+        li {
+
+          a {
+            transition: 0.5s;
+            transition-delay: 0.5s;
+            transform: translateY(0);
+            will-change: transform;
+          }
+
+          &:nth-child(2) {
+            a {
+              transition-delay: 0.6s;
+            }
+          }
+
+          &:nth-child(3) {
+            a {
+              transition-delay: 0.7s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

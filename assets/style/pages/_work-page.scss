@@ -1,0 +1,41 @@
+.work-page-default-header {
+  padding-bottom: 8em;
+
+  .row {
+    justify-content: center;
+
+  }
+}
+
+/* ------------------------ Section Work grid ----------------------- */
+.section-works-grid {
+  padding-top: 0;
+  background-color: #fff;
+  padding-bottom: 3em;
+
+  .row {
+
+    ul {
+      width: 100%;
+
+      li {
+        float: left;
+        width: 50%;
+        position: relative;
+        padding: 1.75em;
+
+        a {
+          position: relative;
+          display: block;
+
+          &::before {
+            content: "";
+            display: block;
+            padding-top: 64%;
+            background-color: #171817;
+          }
+        }
+      }
+    }
+  }
+}

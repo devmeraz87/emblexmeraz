@@ -1,0 +1,129 @@
+.section-footer {
+  padding-bottom: 0;
+  background-color: #fff;
+  color: #202020;
+
+  &.dark {
+    background-color: #202020;
+    color: #fff;
+  }
+
+
+  .footer-top {
+    padding-bottom: 4em;
+
+    .flex-col {
+      &:nth-child(1) {
+        width: 40%;
+      }
+
+      &:nth-child(2) {
+        width: 60%;
+      }
+    }
+
+    .footer-image {
+      position: relative;
+      width: 50%;
+      border-radius: 999px;
+      overflow: hidden;
+
+      &::before {
+        display: block;
+        content: "";
+        padding-top: 150%;
+        background-color: rgba(0, 0, 0, 0.185);
+      }
+
+      .logo-wrap {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        a {
+          font-size: 40px;
+          height: 40px;
+          color: #fff;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3em;
+
+      ul {
+        width: 100%;
+
+        h4 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 0.05em;
+          margin-bottom: 1.5em;
+          color: red;
+        }
+
+        li {
+          line-height: 2;
+
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 4em 0;
+    border-top: 1px solid rgba(75, 75, 75, 0.377);
+
+    .flex-col {
+      &:nth-child(1) {
+        width: 40%;
+      }
+
+      &:nth-child(2) {
+        width: 60%;
+
+        p {
+          font-size: 0.9em;
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .codeby {
+
+      .icon {
+        img {
+          height: 40px;
+          width: 40px;
+          object-fit: contain;
+          vertical-align: middle;
+
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+}

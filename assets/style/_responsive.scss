@@ -1,0 +1,657 @@
+@media screen and (max-width: 1800px) {
+  h2 {
+    font-size: clamp(23px, 2.25vw, 36px) !important;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: clamp(21px, 2.25vw, 36px) !important;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .home-hero {
+
+    .home-circle {
+      width: 75vw;
+    }
+  }
+}
+
+
+@media all and (max-width: 1024px) {
+
+
+
+  /* --------------------------------------------- Index Page ---------------------------------------------*/
+  /* Home Hero */
+  .home-hero {
+
+    .home-circle {
+      width: 75vw;
+    }
+  }
+
+  /* Section Home Intro */
+
+  /* Section Projects Gird */
+  .section-project-grid {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+
+    .row {
+      &:last-child {
+        padding-top: 2em;
+      }
+    }
+
+    .uk-slidenav {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+
+  /* Section Clients Grid */
+  .section-clients-grid {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  /* Section Team */
+  .section-team {
+    .row {
+      .flex-col {
+        h2 {
+          font-size: 32px;
+          margin-bottom: calc(9vw + 6em);
+        }
+      }
+    }
+  }
+
+  /* Section Service */
+  .section-services {
+    padding-left: 3em;
+    padding-right: 3em;
+
+    .row {
+      .title-col {
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .service-row {
+
+      .flex-col {
+        width: 30%;
+        padding-top: 4em;
+
+        svg {
+          margin-bottom: 1.5em;
+        }
+
+        h3 {
+          margin-bottom: 0.75em;
+        }
+      }
+    }
+  }
+
+
+  .section-footer {
+    padding-left: 3em;
+    padding-right: 3em;
+
+    .footer-top {
+
+      .footer-image {
+        .logo-wrap {
+          a {
+            font-size: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      .footer-links {
+        padding-top: 2em;
+      }
+    }
+  }
+
+
+
+  /* ------------------------------------------------- Wrok Page -------------------------------------- */
+  /* Work Page default header */
+  .work-page-default-header {
+    padding-bottom: 5em;
+  }
+
+  /* Work page projects grid */
+  .section-works-grid {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+
+  /* ------------------------------------------------- About Page -------------------------------------- */
+  /* Section Prallax */
+  .section-parallax {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  /* Section The team */
+  .section-the-team {
+
+    .row {
+      &:nth-child(1) {
+        h2 {
+          font-size: 32px;
+        }
+      }
+
+      .flex-col {
+        height: 30em;
+
+        .team-member-card {
+          width: 20em;
+
+          h2 {
+            font-size: 24px;
+          }
+
+          h4 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+  /* ------------------------------------------------- Contact Page -------------------------------------- */
+  /* Section Contact Form */
+  .section-contact-form {
+
+    .form-group {
+
+      .btn {
+        padding: 1em 1.5em 1em 1.5em;
+      }
+    }
+  }
+
+}
+
+
+@media all and (max-width: 768px) {
+
+  /* --------------------------------------- Index Page --------------------------- */
+  /* Home Hero */
+  .home-hero {
+
+    .home-circle {
+      width: 60vw;
+    }
+  }
+
+  /* Section Home intro */
+  .section-home-intro {
+    h2 {
+      width: 75%;
+    }
+  }
+
+
+  /* Section Projects grid */
+  .section-project-grid {
+    padding-bottom: 4em;
+
+    .row {
+
+      .project-thumb {
+        padding: 1.75vw;
+
+        &-content {
+          h2 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Section Clients Grid */
+  .section-clients-grid {
+    padding-top: 3em;
+    padding-bottom: 5em;
+  }
+
+  /* Section Team */
+  .section-team {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+
+  /* Section Service */
+  .section-services {
+
+    .service-row {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .flex-col {
+        width: 20em;
+        padding-right: 2em;
+      }
+    }
+  }
+
+  /* --------------------------------------- Work Page --------------------------- */
+  /* Section Works Grid */
+  .section-works-grid {
+    .row {
+      ul {
+        li {
+          width: 50%;
+          padding: 1.75vw;
+        }
+      }
+    }
+  }
+
+
+
+
+
+  /* --------------------------------------- About Page --------------------------- */
+  /* Section About Intro */
+  .section-about-intro {
+    .row {
+      width: 78%;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  /* Section Parallax */
+  .section-parallax {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+
+    .row {
+      .flex-col {
+        width: calc(50% - 0.5em);
+
+        &:first-child {
+          margin-right: 1rem !important;
+        }
+
+        &:nth-child(2) {
+          margin-right: 0 !important;
+        }
+
+        &:last-child {
+          display: none;
+        }
+
+        .image-col {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+
+  /* Section The team */
+  .section-the-team {
+    .row {
+
+      .flex-col {
+        height: 25em;
+      }
+    }
+  }
+
+
+  /* --------------------------------------- Contact Page --------------------------- */
+  /* Section Contact form */
+  .section-contact-form {
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    .row {
+      max-width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 720px) {
+
+
+  /* -------------------------------- About Page The Team -----------------------*/
+  .section-the-team {
+    margin-bottom: 5em;
+
+    .section-team-bg {
+      height: 78vh;
+    }
+
+    .overlay {
+      height: 79vh;
+    }
+
+    .row {
+      &:nth-child(1) {
+        z-index: 9;
+      }
+
+      &:nth-child(2) {
+        flex-direction: column;
+        margin-top: 40vh;
+        width: 80%;
+
+        .flex-col {
+          width: 100%;
+          height: auto;
+          margin-bottom: 2em;
+
+          .team-member-card {
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            opacity: 1;
+            transform: translate(0, 0);
+            width: 100%;
+            visibility: visible;
+
+            &::before {
+              display: none;
+            }
+
+            h2 {
+              font-size: 30px;
+            }
+
+            h4 {
+              font-size: 15px;
+              font-weight: 700;
+            }
+
+            p {
+              font-size: 18px;
+              line-height: 1.75;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+
+
+  /* Foooter */
+  .section-footer {
+    .footer-top {
+      .flex-col {
+        &:nth-child(1) {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1em;
+
+          .footer-image {
+            width: 40%;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+@media all and (max-width: 540px) {
+
+  /* ------------------------------------ Home Page -------------------------- */
+  /* Home hero */
+  .home-hero {
+
+    .home-circle {
+      top: 40%;
+    }
+
+    .scroll-down-btn-wrap {
+      bottom: 4.5em;
+    }
+
+    .side-text {
+      display: none;
+    }
+  }
+
+  /* section Home Intro */
+  .section-home-intro {
+    padding-top: 5em;
+
+    .row {
+      h2 {
+        width: 90%;
+      }
+    }
+  }
+
+
+  /* Section Projects Grid */
+  .section-project-grid {
+    padding-left: 3.75vw;
+    padding-right: 10vw;
+
+    .row {
+      .project-thumb {
+        width: 100%;
+      }
+
+      .btn {
+        margin-left: 5vw;
+      }
+    }
+  }
+
+  /* Section Clients grid */
+  .section-clients-grid {
+    padding-top: 0;
+    padding-left: 1.75em;
+    padding-right: 1.75em;
+
+    .row {
+      &:nth-child(2) {
+        .single-logo {
+          width: 50%;
+          padding: 1.2em 0;
+        }
+      }
+    }
+  }
+
+  /* Section Team */
+  .section-team {
+    .row {
+      &:nth-child(1) {
+        width: 80%;
+      }
+    }
+  }
+
+  /* Section Service */
+  .section-services {
+    padding-top: 3em;
+
+    .service-row {
+      .flex-col {
+        padding-top: 3em;
+      }
+    }
+  }
+
+  /* --------------------------------- About Page ------------------------- */
+  /* Section About Intro */
+  .section-about-intro {
+    .row {
+      width: 90%;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  /* Section parallax */
+  .section-parallax {
+    .black-bar {
+      height: 13vh;
+    }
+  }
+
+  .section-the-team {
+    .section-team-bg {
+      height: 50vh;
+    }
+
+    .overlay {
+      height: 52vh;
+    }
+
+    .row {
+      &:nth-child(1) {
+        width: 80%;
+      }
+
+      &:nth-child(2) {
+        margin-top: 20vh;
+        width: 90%;
+
+        .flex-col {
+          .team-member-card {
+            padding: 1.5em;
+
+            p {
+              font-size: 16px;
+              line-height: 1.4;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* --------------------------------------- Work Page --------------------------- */
+  /* Section Works Grid */
+  .section-works-grid {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+
+    .row {
+      ul {
+        li {
+          width: 100%;
+          padding: 1.75vw;
+        }
+      }
+    }
+  }
+
+
+  /* --------------------------------------- Contact Page --------------------------- */
+  .section-contact-form {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+
+  /*-------------------------------- Footer ----------------------------*/
+  /* Foooter */
+  .section-footer {
+    padding-top: 4em;
+
+    .footer-top {
+      .flex-col {
+        &:nth-child(1) {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 2em;
+
+          .footer-image {
+            width: 60%;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 100%;
+
+          h2 {
+            margin-bottom: 0em;
+          }
+
+          .footer-links {
+            ul {
+              h4 {
+                font-size: 15px;
+                margin-bottom: 0.5em;
+              }
+
+              li {
+
+                a {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+
+      .flex-col {
+        width: 100% !important;
+
+        .codeby {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}

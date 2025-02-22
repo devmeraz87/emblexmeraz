@@ -3,9 +3,9 @@ const lenis = new Lenis({
   lerp: 0.05,
   smooth: true,
   direction: "vertical",
-  gestureOrientation: "vertical",
+  // gestureOrientation: "vertical",
   syncTouch: true,
-  // syncTouchLerp: 0.05,
+  syncTouchLerp: 0.05,
 });
 
 //get scroll value

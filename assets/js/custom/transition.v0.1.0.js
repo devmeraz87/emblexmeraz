@@ -80,12 +80,13 @@ function OnceAnimation() {
 function enterAnimation() {
   const tl = gsap.timeline();
 
-  // lenis.start();
-
   tl.set(".main-fade", {
     opacity: 0,
   });
 
+  /**
+   * Set Loading Screen to opacity 0 because page transiton will conflict if opacity not set to 0;
+   */
   tl.set(".loading-screen", {
     opacity: 0,
     pointerEvents: "none",
@@ -166,8 +167,6 @@ function pageTransition() {
     },
     "-=.5"
   );
-
-  // lenis.stop();
 }
 
 /**
@@ -186,7 +185,8 @@ $(function () {
     transitions: [
       {
         async once(data) {
-          OnceAnimation();
+          // console.log("once");
+          // Once do nothing Becaues of having custom loader
         },
         async enter(data) {
           enterAnimation();
